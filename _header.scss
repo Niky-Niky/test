@@ -1,0 +1,111 @@
+.logo {
+    color: #000000;
+  
+    font-family: Raleway, sans-serif;
+    font-style: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 3%;
+  }
+  
+  span {
+    color: var(--accent-color);
+  }
+  
+  /*шапка навигації*/
+  .header-nav{
+    box-sizing: border-box;
+    margin-bottom: 0;
+    border-bottom: 1px solid #ECECEC;;
+    }
+    
+  .header-nav,
+  .contacts-nav
+  {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  
+  @include centeredFlex (flex-start);
+  }
+  
+  .nav-list {
+    display: flex;
+    margin-left: 93px;
+  }
+  .link{
+    .nav-list .link-current {
+      display: block;
+      padding-top: 21px;
+      padding-bottom: 21px; 
+    
+      color: var(--accent-color);
+    
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+    }
+    
+    .nav-list  {
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      color: #000000;
+    
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+    }
+    
+    .nav-list .link:hover,
+    .nav-list .link:focus{
+      color: var(--accent-color);
+    }
+    
+    .contacts-nav{
+      display: flex;
+      margin-left: auto;
+    }
+    
+    .contacts-nav li + li {
+      margin-left: 50px;
+    }
+    
+    .contacts-nav a {
+      color: var(--primary-text-color);
+    
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+    }
+    .contacts-nav .contacts-link:focus,
+    .contacts-nav .contacts-link:hover
+    {
+      color: var(--accent-color);
+      fill: var(--accent-color);
+    }
+  }
+  
+   .list-item{
+    margin-right: 54px;
+  }
+  .list-item:last-child{
+    margin-right: 0;
+  } 
+  
+  .contacts-link{
+    display:flex;
+    align-items: center;
+  }
+  .contact-icon{
+    margin-right: 10px;
+    fill: currentColor;
+    &:focus,
+    &:hover{
+     color: var(--accent-color);
+     fill: var(--accent-color);
+   }
+  }
